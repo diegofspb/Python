@@ -11,9 +11,10 @@ def selecao_ordenacao(vetor):
                                    # caso o menor número esteja na posição 0 que é a posição do [i], então o indice_minimo 
                                    # ficará com o valor padrão que é o próprio [i], conforme atribuição na linha 5
 
-        aux = vetor[i] # preserva a posição atual do vetor para não ser colocado em outra posição evitando ser sobrescrito/perdido
-        vetor[i] = vetor[indice_minimo] #posição do vetor vai caminhando, da posição 0 até a len(vetor)
-        vetor[indice_minimo] = aux # quando encontrado o menor número da sequencia, ele é salvo na posição inical a posição que ele saiu recebe a posição maior
+        aux = vetor[i] # guarda a posição atual 'i' que está sendo comparada com a proxima posição i+1 
+        vetor[i] = vetor[indice_minimo] #posição atual 'i' recebe o menor valor do vetor que foi encontrado através do indice_minimo = j
+        # isso vai caminhando, primeiro compara posição i=0 e procura o menor valor e salva na posição 0, depois i=1 e por ai vai até terminar
+        vetor[indice_minimo] = aux # aux está com o vetor atual vetor[i], caso ele não seja o menor da posição atual 
 
 vetor=[5,7,4,3]
 selecao_ordenacao(vetor)
