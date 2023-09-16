@@ -1,3 +1,6 @@
+# 3. Escreva um programa que encontre o elemento máximo em um vetor de inteiros não ordenado sem
+# usar a função `max()`. Em seguida, encontre o elemento mínimo sem usar a função `min()`.
+
 def encontrar_maximo(vetor):
     maximo = vetor[0]
     for elemento in vetor:

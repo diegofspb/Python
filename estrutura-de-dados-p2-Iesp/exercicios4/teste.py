@@ -24,3 +24,5 @@ lista = [6,2,8,1,5]
 
 numOrdenado(lista)
 contParImpar(lista)
+
+

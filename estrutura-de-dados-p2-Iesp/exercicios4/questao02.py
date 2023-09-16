@@ -1,3 +1,6 @@
+# 2. Escreva uma função em Python para ordenar um vetor de inteiros, ele deve receber um parâmetro que
+# serve como chave para realizar a ordenação crescente ou decrescente.
+
 def selecao_ordenacao(vetor, ordem):
     n = len(vetor)
     if ordem==0:    

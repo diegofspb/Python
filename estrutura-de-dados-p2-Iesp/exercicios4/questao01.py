@@ -1,3 +1,6 @@
+# 1. Escreva uma função em Python para ordenar um vetor de inteiros em ordem crescente usando o
+# algoritmo de seleção.
+
 def selecao_ordenacao(vetor):
     n = len(vetor)
     for i in range(n):
@@ -9,7 +12,7 @@ def selecao_ordenacao(vetor):
                 indice_minimo = j  # no primeiro ciclo o 'i' sempre é = 0 e o 'n' percorre todos os numeros do vetor,
                                    # ou seja, o indice_minimo salvará a posição [j] que contém o menor número de todo vetor
                                    # caso o menor número esteja na posição 0 que é a posição do [i], então o indice_minimo 
-                                   # ficará com o valor padrão que é o próprio [i], conforme atribuição na linha 5
+                                   # ficará com o valor padrão que é o próprio [i], conforme atribuição na linha 8
 
         aux = vetor[i] # guarda a posição atual 'i' que está sendo comparada com a proxima posição i+1 
         vetor[i] = vetor[indice_minimo] #posição atual 'i' recebe o menor valor do vetor que foi encontrado através do indice_minimo = j
